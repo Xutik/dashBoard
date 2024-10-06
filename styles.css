@@ -1,0 +1,184 @@
+
+.red-hat-display-<uniquifier> {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+
+.left{
+    width: 20%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(148, 212, 214);
+    font-family: "Red Hat Display"; 
+    color:rgb(233, 236, 238);
+    padding: 20px;
+    
+}
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+   fill: white;
+   display: inline-block;
+   width: 35px;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    flex: 1;
+    font-family: "Red Hat Display";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+header .icon {
+    margin-right: 10px;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+nav li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+nav .icon {
+    margin-right: 10px;
+}
+  
+.icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.header-icon { background-image: url('path/to/header-icon.png'); }
+.menu-icon-1 { background-image: url('path/to/menu-icon-1.png'); }
+.menu-icon-2 { background-image: url('path/to/menu-icon-2.png'); }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 20px;
+  }
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(250, 205, 15);
+}
+  
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.project-description {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+  
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.action-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+}
+  
+.action-btn i {
+    font-size: 18px;
+    color: #333333;
+}
+  
+.action-btn:hover i {
+    color: #007bff;
+}
+
+.custom-button {
+    background-color: #007bff;
+    font-size: 18px;
+    color: white;
+    padding: 16px;
+    border-radius: 32px;
+    width: 120px;
+}
+
+.custom-button:hover {
+    background-color: #061e36;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pinguin{
+    width: 15px;
+}
+
+.search {
+    display: flex;
+    height: 20px;
+}
