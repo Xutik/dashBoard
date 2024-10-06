@@ -18,8 +18,6 @@ button {
     font: inherit;
     color: inherit;
     background-color: transparent;
-    /* отображаем курсор в виде руки при наведении; некоторые
-    считают, что необходимо оставлять стрелочный вид для кнопок */
     cursor: pointer;
 }
 
@@ -30,7 +28,7 @@ button {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    background-color: rgb(148, 212, 214);
+    background-color: #007bff;
     font-family: "Red Hat Display"; 
     color:rgb(233, 236, 238);
     padding: 20px;
@@ -40,6 +38,7 @@ a{
     text-decoration: none;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .item {
@@ -63,37 +62,6 @@ header {
     align-items: center;
     margin-bottom: 20px;
 }
-  
-header .icon {
-    margin-right: 10px;
-}
-  
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-  
-nav li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-  
-nav .icon {
-    margin-right: 10px;
-}
-  
-.icon {
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-  
-.header-icon { background-image: url('path/to/header-icon.png'); }
-.menu-icon-1 { background-image: url('path/to/menu-icon-1.png'); }
-.menu-icon-2 { background-image: url('path/to/menu-icon-2.png'); }
 
 .project-grid {
     display: grid;
@@ -139,24 +107,6 @@ nav .icon {
     display: flex;
     justify-content: flex-end;
 }
-  
-.action-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-    padding: 5px;
-}
-  
-.action-btn i {
-    font-size: 18px;
-    color: #333333;
-}
-  
-.action-btn:hover i {
-    color: #007bff;
-}
-
 .custom-button {
     background-color: #007bff;
     font-size: 18px;
@@ -181,4 +131,22 @@ nav .icon {
 .search {
     display: flex;
     height: 20px;
+}
+
+.friends{
+    display: flex;
+}
+.sidebar{
+    width: 30%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+nav li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
